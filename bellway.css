@@ -10,18 +10,161 @@ body{
     position: relative;
      margin-top: -120px;
       margin-left: -149px;
+
+
+
+
 }
+
+
+
+#ws {
+  /* animation: spin 1s linear infinite;
+  animation-timing-function: ease-in;
+  animation-delay: 2s; */
+  animation-name: spin;
+  animation-fill-mode: infinite;
+  animation-timing-function: ease-in;
+  animation-direction: reverse;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  position: relative;
+}
+
+@keyframes spin {
+  0% {
+      /* transform: rotate(360deg); */
+    
+     top: 0px;
+     left: 0px;
+}
+25%
+{
+  top: 250px;
+  left: 0px;
+}
+75%
+{
+  top: 250px;
+  left: 250px;
+}
+100%
+{
+  top: 0px;
+  left: 250px;
+}
+}
+
 #q
 {
     position: absolute;
      margin-top: 170px;
-      margin-left: 30px;
+      margin-left: 20px;
 }
 
-#four
-{
- bottom: 700px;
+
+#q {
+  animation: slideIn infinite ease-in ;
+  animation-duration: 3s;
+  animation: slideIn 3s linear  infinite;
 }
+
+@keyframes slideIn {
+  from {
+    filter: hue-rotate(0deg);
+      transform: translateX(-100%);
+  }
+  to {
+    filter: hue-rotate(360deg);
+      transform: translateX(0);
+
+  }
+}
+ #thr
+{
+  animation-name: left;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation:left 3s linear  infinite;
+}
+@keyframes left {
+  from {
+    margin-left: -400px;
+    filter: hue-rotate(0deg);
+}
+to {
+    transform: translateX(0);
+    filter: hue-rotate(360deg);
+}
+   
+  
+} 
+
+#fou
+{
+  animation-name: left;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  bottom: 700px;
+}
+@keyframes left {
+  from {
+    margin-left: -400px;
+}
+to {
+    transform: translateX(0);
+}
+}
+
+#fg
+{
+
+  
+    animation-name: fadeIn;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes fadeIn {
+    from{
+
+      transform:scale(1.0);
+       
+    } 
+    
+    
+}
+#off
+{
+
+}
+
+
+
+#nb ,#by, #bs ,#fx ,#fz, #fq ,#bz ,#vc, #cc, #ou, #pl, #vt ,#xs ,#mn
+{
+  animation-name: hg;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+@keyframes hg {
+
+  from{
+  transform:scale(0.8);
+  }
+}
+
+
+
+
+
+
+
+ 
+
+
 #five
 {
     height: 56px;
@@ -39,6 +182,9 @@ border: 8px solid transparent;
    
     
 }
+
+
+
 #six
 {
     height: 56px;
@@ -119,7 +265,7 @@ border: 7px solid transparent;
 
 border: 7px solid transparent;
 }
-#ye{
+#yn{
     /* font-family: Nunito Sans; */
 font-size: 46px;
 /* font-weight: 700; */
@@ -129,7 +275,48 @@ text-align: left;
 color:white;
 font-weight: 600;
 margin-left: 418px;
+/* animation-name: shadow;
+animation-duration: 3s;
+animation-iteration-count: infinite; */
+
 }
+
+/* @keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1);
+ 
+  }
+}
+
+#za {
+  animation: pulse 3s ease-in-out infinite;
+
+} */
+
+
+
+@keyframes scaleText {
+  from { transform: scale(1); }
+  to { transform: scale(1.2); }
+}
+
+#yn {
+  display: inline-block;
+  animation: scaleText 3s ease-in-out infinite alternate;
+}
+
+
+
+
+/* @keyframes shadow {
+  0% { text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
+  50% { text-shadow: 0 0 20px rgba(0, 0, 0, 0.8); }
+  100% { text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
+} */
+
+
+
 
 #amazon
 {
@@ -166,6 +353,8 @@ margin-left: 418px;
     margin-top: 130px
 
 }
+
+
 #login
 {
     height: 56px;
@@ -348,3 +537,378 @@ margin-top: 20px;
     color: antiquewhite;
     margin-left: 100px;
  }
+
+ @keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+#zo,#za {
+  animation: pulse 3s ease-in-out infinite;
+}
+
+/* 
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+#vl {
+  animation: bounce 1s ease-in-out infinite;
+} */
+ /* @keyframes flip {
+  0%
+   { transform: perspective(400px) rotateY(0);
+    
+   }
+  100% 
+  { transform: perspective(400px) rotateY(180deg);
+   
+   }
+} 
+
+#vl,#ub {
+  animation: flip 3s ease-in-out infinite;
+} 
+@keyframes flip {
+  0%
+   { transform: perspective(400px) rotateY(0);
+    
+   }
+  100% 
+  { transform: perspective(400px) rotateY(180deg);
+   
+   }
+}  */
+@keyframes perspective3d {
+  0% { transform: perspective(400px) rotateY(0deg); }
+  100% { transform: perspective(400px) rotateY(360deg);
+ margin-bottom: 150px;}
+}
+
+.one,.two,.three,.four,.five,.six,.seven,#amazon,.eight,.nine,#last,#nmq{
+  animation:perspective3d 3s linear infinite;
+}
+@keyframes perspective3d {
+  0% { transform: perspective(400px) rotateY(0deg); }
+  100% { transform: perspective(400px) rotateY(180deg);
+ }
+}
+
+
+ /* @keyframes skew3d {
+  0% { transform: skewX(0deg) skewY(0deg); }
+  50% { transform: skewX(10deg) skewY(10deg); }
+  100% { transform: skewX(0deg) skewY(0deg); }
+}
+
+#ub {
+  animation: skew3d 2s ease-in-out infinite;
+} */
+
+
+
+#login{
+  opacity: 0;
+  transform: scale(0.5);
+  animation: scaleIn 3s ease-in-out forwards;
+  animation-iteration-count: infinite;
+}
+
+@keyframes scaleIn {
+  from {
+      opacity: 0;
+      transform: scale(0.5);
+  }
+  to {
+      opacity: 1;
+      transform: scale(1);
+  }
+}
+
+
+#yachu1,#yachu2,#yachu3{
+  opacity: 0;
+  transform: scale(0.5);
+  animation: scaleIn 3s ease-in-out forwards;
+  animation-iteration-count: infinite;
+}
+
+@keyframes scaleIn {
+  from {
+      opacity: 0;
+      transform: scale(0.5);
+  }
+  to {
+      opacity: 1;
+      transform: scale(1);
+  }
+}
+
+
+#honey,#honey1,#honey2 {
+  opacity: 0;
+  transform: rotate(-180deg);
+  animation: rotateIn 3s ease-in-out forwards;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rotateIn {
+  from {
+      opacity: 0;
+      transform: rotate(-180deg);
+  }
+  to {
+      opacity: 1;
+      transform: rotate(0deg);
+  }
+}
+
+
+#off {
+  opacity: 0;
+  transform: scale(0.5);
+  animation: scaleIn 4s ease-in-out forwards;
+  animation-iteration-count: infinite;
+}
+
+@keyframes scaleIn {
+  from {
+      opacity: 0;
+      transform: scale(0.5);
+  }
+  to {
+      opacity: 1;
+      transform: scale(1);
+  }
+}
+#uff,#ufff,#uffff,#ufffff,#uffffff,#ufffffff,#uffffffff,#ufffffffff ,#if,#iff,#ifff{
+  opacity: 0;
+  transform: scale(0.5);
+  animation: s 4s ease-in-out forwards;
+  animation-iteration-count: infinite;
+}
+
+@keyframes s {
+  from {
+      opacity: 0;
+      transform: scale(0.5);
+      transform: rotate(-180deg);
+  }
+  to {
+      opacity: 1;
+      transform: scale(1);
+      transform: rotate(0deg);
+    
+  }
+}
+#vast
+{
+
+}
+
+@keyframes bounceRotate {
+  0% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-20px) rotate(360deg); }
+  100% { transform: translateY(0) rotate(0deg); }
+}
+
+#vast,#vast2,#vast3,#vast4,#vast5 {
+  animation: bounceRotate 3s ease-in-out ;
+}
+
+#vast,#vast2,#vast3,#vast4,#vast5 {
+  opacity: 0;
+  transform: scale(0.5);
+  animation: scaleIn 3s ease-in-out forwards;
+  animation-iteration-count: infinite;
+}
+
+@keyframes scaleIn {
+  from {
+      opacity: 0;
+      transform: scale(0.5);
+  }
+  to {
+      opacity: 1;
+      transform: scale(1);
+  }
+}
+
+/* 
+@keyframes moveX {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(100px); }
+  100% { transform: translateX(0); }
+}
+
+#cast {
+  animation: moveX 3s linear infinite;
+} */
+@keyframes rotateAntiClockwise {
+  0% { transform: rotate(0deg);
+   }
+  100% { transform: rotate(-360deg);
+ }
+}
+
+#cast {
+  animation: rotateAntiClockwise 2s linear infinite;
+}
+
+
+#cast1,#cast2,#cast3,#cast4,#cast5,#cast6,#cast7,#ei {
+  opacity: 0;
+  transform: translateX(-100%);
+  animation: slideInLeft 3s ease forwards;
+  animation-iteration-count: infinite;
+}
+
+@keyframes slideInLeft {
+  from {
+      opacity: 0;
+      transform: translateX(-100%);
+  }
+  to {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+@keyframes eLeft {
+  from {
+      opacity: 0;
+      transform: translateX(-100%);
+  }
+  to {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+#cast8,#cast9
+{
+  animation-name: eLeft;
+  transform: translateX(100%);
+  animation: slideInLeft 3s ease forwards;
+  animation-iteration-count: infinite;
+}
+
+@keyframes pulseSpin {
+  0% { transform: scale(1) rotate(0deg); }
+  50% { transform: scale(1.1) rotate(180deg); }
+  100% { transform: scale(1) rotate(360deg); }
+}
+
+#cast10 {
+  animation: pulseSpin 3s ease-in-out infinite;
+}
+
+#lk,#lk1,#lk2,#eight {
+  opacity: 0;
+  transform: translateX(-100%);
+  animation: slideInLeft 3s forwards;
+  animation-iteration-count: infinite;
+  
+}
+
+@keyframes slideInLeft {
+  from {
+      opacity: 0;
+      transform: translateX(-100%);
+  }
+  to {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+
+#eightw {
+  opacity: 0;
+  transform: translateX(100%);
+  animation: slideInRight 3s forwards;
+  animation-iteration-count: infinite;
+
+}
+
+@keyframes slideInRight {
+  from {
+      opacity: 0;
+      transform: translateX(20%);
+     
+  }
+  to {
+      opacity: 1;
+      transform: translateX(0);
+    
+  }
+}
+
+#vr,#vk {
+  opacity: 0;
+  transform: scale(0.5);
+  animation: vw 4s ease-in-out forwards;
+  animation-iteration-count: infinite;
+}
+
+@keyframes vw {
+  from {
+      opacity: 0;
+      transform: scale(0.5);
+  }
+  to {
+      opacity: 1;
+      transform: scale(1);
+  }
+}
+ */
+
+ #wqg {
+  font-size: 36px; 
+   font-weight: bold;
+ 
+  text-align: center;
+  animation: waveAnimation 2s linear infinite;
+} 
+
+ @keyframes waveAnimation {
+  0% {
+    text-shadow: 0 0 0 #ff0011, 0 0 0 #007bff, 0 0 0 #007bff;
+  }
+  25% {
+    text-shadow: 0 0 10px #e100ff, 0 0 20px #ff007b, 0 0 30px #e5ff00;
+  }
+  50% {
+    text-shadow: 0 0 20px #007bff, 0 0 30px #007bff, 0 0 40px #007bff;
+  }
+  75% {
+    text-shadow: 0 0 10px #99ff00, 0 0 20px #ff007b, 0 0 30px #00ff15;
+  }
+  100% {
+    text-shadow: 0 0 0 #007bff, 0 0 0 #007bff, 0 0 0 #007bff;
+  }
+} 
+  #bpz {
+  font-size: 36px; /* Adjust font size as needed */
+   font-weight: bold;
+   text-align: center;
+  animation: waveAnimation 2s linear infinite;
+} 
+
+@keyframes waveAnimation {
+  0% {
+    text-shadow: 0 0 0 #ff0011, 0 0 0 #007bff, 0 0 0 #007bff;
+  }
+  25% {
+    text-shadow: 0 0 10px #e100ff, 0 0 20px #ff007b, 0 0 30px #e5ff00;
+  }
+  50% {
+    text-shadow: 0 0 20px #007bff, 0 0 30px #007bff, 0 0 40px #007bff;
+  }
+  75% {
+    text-shadow: 0 0 10px #99ff00, 0 0 20px #ff007b, 0 0 30px #00ff15;
+  }
+  100% {
+    text-shadow: 0 0 0 #007bff, 0 0 0 #007bff, 0 0 0 #007bff;
+  }
+} 
